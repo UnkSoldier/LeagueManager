@@ -37,7 +37,7 @@ namespace LeagueManager.Common
             {
                 listOfTeams.Add(teamToAdd);
                 teamSubscribedList.Remove(teamToAdd);
-                foreach (Player elem in teamToAdd)
+                foreach(Player elem in teamToAdd.playersInTeam)
                     {
                         playersOfTheLeague.Add(elem);
                     }

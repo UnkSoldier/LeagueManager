@@ -11,6 +11,7 @@ namespace LeagueManager.Common
         Player m_second { get; }
         Player m_third { get; }
         Player m_skip { get; }
+        public List<Player> playersInTeam = new List<Player>();
 
         public Team(Player p_first, Player p_second, Player p_third, Player p_skip)
         {
@@ -18,6 +19,11 @@ namespace LeagueManager.Common
             this.m_second = p_second;
             this.m_third = p_third;
             this.m_skip = p_skip;
+
+            playersInTeam.Add(m_first);
+            playersInTeam.Add(m_second);
+            playersInTeam.Add(m_third);
+            playersInTeam.Add(m_skip);
         }
     }
 }
