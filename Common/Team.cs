@@ -19,6 +19,6 @@ namespace LeagueManager.Common
             this.m_third = p_third;
             this.m_skip = p_skip;
         }
-        //this is a test!
+        //this is a test!!
     }
 }
